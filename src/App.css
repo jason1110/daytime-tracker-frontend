@@ -1,16 +1,40 @@
-.App {
+
+body {
+  background: radial-gradient(circle, rgba(252,176,69,0.2) 3%, rgba(253,29,29,0.2) 32%, rgba(131,58,180,0.2) 91%);
+}
+
+
+h1 {
   text-align: center;
+  font-size: 5rem;
+  color: rgb(35, 7, 60);
 }
 
-day-table {
+
+.day-table {
   display: flex;
-  justify-content: space between;
+  padding: 2px 16px;
+  overflow-x: scroll;
+  min-height: 300px;
+  max-width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-day-card {
+.day-card {
+  color: rgb(35, 7, 60);;
   display: flex;
-  justify-content: space-between;
-  text-align: left;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  min-height: 250px;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 20px;
+}
+
+.day-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 ul {

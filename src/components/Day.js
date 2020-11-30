@@ -1,8 +1,12 @@
 export default function Day(props) {
 
+
     return (
         <div>
             <ul className='day-card'>
+                <h3>
+                    {props.day.name}
+                </h3>
                 <li>
                     Sunrise:  {props.day.sunrise}
                 </li>

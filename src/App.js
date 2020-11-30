@@ -6,7 +6,8 @@ import './App.css';
 class App extends Component {
 
   state = {
-    day: []
+    day: [],
+    image: ""
   }
 
   componentDidMount(){
@@ -25,8 +26,8 @@ class App extends Component {
     console.log(this.state.day)
     return (
       <div className="App">
-        <h1>Sunrise Sunset tracker</h1>
-        <DayTable day={this.state.day} />
+        <h1> Day Tracker </h1>
+        <DayTable day={this.state.day} image={this.state.image} />
       </div>
     );
   }
